@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Made BY Ekarsha-->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="icon" href="https://open.spotifycdn.com/cdn/images/favicon32.b64ecc03.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link rel="stylesheet" href="styles.css">
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+        <div class="side-bar">
+            <div class="nav-bar">
+                <div class="nav-options active">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-options">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="resizer" id="dragMe"></div>
+
+            <div class="library">
+                <div class="options">
+                    <div class="lib-options">
+                        <img src="./assets/library_icon.png">
+                        <a href="#">Your Libraries</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="scroll">
+                    <div class="box">
+                        <div class="box-p1"><!--Under Development-->Create your first playlist</div>
+                        <div class="box-p2">It's easy, we'll help you</div>
+                        <button class="badge">Create playlist</button>
+                    </div>
+                    <div class="box">
+                        <div class="box-p1">Let's find some podcasts to follow</div>
+                        <div class="box-p2">We'll keep you updated on new episodes</div>
+                        <button class="badge">Browse podcasts</button>
+                    </div>
+                </div>
+                <div class="customer-lists">
+                    <p class="">Legal</p>
+                    <p class="">Privacy Center</p>
+                    <p class="">Privacy Policy</p>
+                    <p class="">Cookies</p>
+                    <p class="">About Ads</p>
+                    <p class="">Acessibility</p>
+                </div>
+                <div class="language-selector">
+                    <button><i class="fa-solid fa-globe"></i> English</button>
+                    <button><i class="fa-solid fa-globe"></i> INDIA</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-buttons-p1">
+                    <img src="./assets/backward_icon.png">
+                    <img src="./assets/forward_icon.png" class="hide">
+                </div>
+                <div class="sticky-nav-buttons-p2">
+                    <button class="dark-btn hide">Sign Up</button>
+                    <button class="light-btn">Log In</button>
+                </div>
+            </div>
+            <div class="ramaining-main-content">
+                <div class="cards">
+                    <div class="card-slot-1">
+                        <div class="card-slot-heading" id="card-slot-heading">
+                            <div class="main-card-slot-heading">My Faves</div>
+                            <div class="secondary-card-slot-heading"><button onclick="showitHideit()" id="showit">Show
+                                    All</button></div>
+                        </div>
+                        <div class="card">
+                            <button class="card-1 myDIV"   onclick="addMusic(this.id)" id="gallantry">
+                                <img src="https://i1.sndcdn.com/artworks-000373235316-limc6p-t500x500.jpg"
+                                    class="card-img ">
+                                <div>Gallantry DM</div>
+
+                            </button>
+                            <button class="card-1 myDIV"  onclick="addMusic(this.id)" id="voices">
+                                <img src="https://i.scdn.co/image/ab67616d00001e02a3758312435de932d9ae8833"
+                                    class="card-img ">
+                                <div class="card-title">Voices RKO</div>
+
+                            </button>
+                            <button class="card-1 myDIV"  onclick="addMusic(this.id)" id="head of the table">
+                                <img src="https://i.scdn.co/image/ab67616d0000b273015f936d9cc664255aa5e168"
+                                    class="card-img ">
+                                <div class="card-title">Head of the Table</div>
+
+                            </button>
+                            <button class="card-1 myDIV"  onclick="addMusic(this.id)" id="the game">
+                                <img src="https://i.scdn.co/image/ab67616d0000b273c1a932c83be39ad4b9ee34da"
+                                    class="card-img ">
+                                <div class="card-title">The Game H.H.H</div>
+
+                            </button>
+                            <button class="card-1 myDIV"   onclick="addMusic(this.id)" id="unscripted violence">
+                                <img src="https://i1.sndcdn.com/artworks-000595555401-i50hgx-t500x500.jpg"
+                                    class="card-img ">
+                                <div class="card-title">Unscripted Violence</div>
+
+                            </button>
+                            <button class="card-1 myDIV hide-it"  onclick="addMusic(this.id)" id="broken dreams">
+                                <img src="https://i.scdn.co/image/ab67616d0000b27318621ed6a72a96a4be7fd8d3"
+                                    class="card-img ">
+                                <div class="card-title">Broken Dreams</div>
+
+                            </button>
+                            <button class="card-1 myDIV hide-it" onclick="addMusic(this.id)" id="kingdom">
+                                <img src="https://i.scdn.co/image/ab67616d0000b27381600202fa2aa00411c4dc48"
+                                    class="card-img ">
+                                <div class="card-title">Kingdom</div>
+
+                            </button>
+                            <button class="card-1 myDIV hide-it"   onclick="addMusic(this.id)" id="line in the sand">
+                                <img src="https://i.scdn.co/image/ab67616d0000b27325d6ca20037122522b1cb8a4"
+                                    class="card-img ">
+                                <div class="card-title">Line in the Sand</div>
+
+                            </button>
+                            <button class="card-1 myDIV hide-it"   onclick="addMusic(this.id)" id="molotov">
+                                <img src="https://i1.sndcdn.com/artworks-Ezm1wWqHkmwqzPp5-DkcyOA-t500x500.jpg"
+                                    class="card-img ">
+                                <div class="card-title">Molotov-V2</div>
+
+                            </button>
+                            <button class="card-1 hide-it myDIV "   onclick="addMusic(this.id)" id="phenomenal">
+                                <img src="https://i.scdn.co/image/ab67616d0000b2738bbee2f2e18dec422eaf4da7"
+                                    class="card-img ">
+                                <div class="card-title">Phenomenal</div>
+
+                            </button>
+                            <button class="card-1 hide-it myDIV "   onclick="addMusic(this.id)" id="metalingus">
+                                <img src="https://i1.sndcdn.com/artworks-000116305222-j3hmrm-t500x500.jpg"
+                                    class="card-img ">
+                                <div class="card-title">Metalingus</div>
+
+                            </button>
+                            <button class="card-1 hide-it myDIV "   onclick="addMusic(this.id)" id="we are one">
+                                <img src="https://i1.sndcdn.com/artworks-000562043793-r53ks7-t500x500.jpg"
+                                    class="card-img ">
+                                <div class="card-title">We are One</div>
+
+                            </button>
+                            <button class="card-1 hide-it myDIV "   onclick="addMusic(this.id)"
+                                id="no one will survive">
+                                <img src="https://i.scdn.co/image/ab67616d0000b273c63ec6157265473ac19ee6d9"
+                                    class="card-img ">
+                                <div class="card-title">No one will Survive</div>
+
+                            </button>
+                            <button class="card-1 hide-it myDIV "  onclick="addMusic(this.id)" id="bring the fire">
+                                <img src="https://i.scdn.co/image/ab67616d0000b2734c71f05d16559d2f8d30ac1d"
+                                    class="card-img ">
+                                <div class="card-title">Bring the Fire</div>
+
+                            </button>
+                            <button class="card-1 hide-it myDIV "   onclick="addMusic(this.id)" id="after dark">
+                                <img src="https://i.scdn.co/image/ab67616d0000b273b492477206075438e0751176"
+                                    class="card-img ">
+                                <div class="card-title">After Dark</div>
+
+                            </button>
+                            <button class="card-1 hide-it myDIV "   onclick="addMusic(this.id)"
+                                id="cult of personality">
+                                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/10332bb4-dcab-42a2-b252-b22e0be7037b/deptww3-3557633a-859c-4383-845f-c5c6b62250f6.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzEwMzMyYmI0LWRjYWItNDJhMi1iMjUyLWIyMmUwYmU3MDM3YlwvZGVwdHd3My0zNTU3NjMzYS04NTljLTQzODMtODQ1Zi1jNWM2YjYyMjUwZjYuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.sbewImWboDq1hSBJ_2GNHhl_yn4bfMyz0KDofpUmHPw"
+                                    class="card-img ">
+                                <div class="card-title">Cult of Personality</div>
+
+                            </button>
+                            <button class="card-1 hide-it myDIV "   onclick="addMusic(this.id)"
+                                id="all about tha boom">
+                                <img src="https://i.scdn.co/image/ab67616d0000b273bd6b9e6e1a962367be495a17"
+                                    class="card-img ">
+                                <div class="card-title">All About tha Boom</div>
+
+                            </button>
+                            <button class="card-1 hide-it myDIV "   onclick="addMusic(this.id)" id="stone cold theme">
+                                <img src="https://i.scdn.co/image/ab67616d0000b273f2655f119538a2930383a4f9"
+                                    class="card-img ">
+                                <div class="card-title">Stone cold Theme</div>
+
+                            </button>
+                            <button class="card-1 hide-it myDIV "   onclick="addMusic(this.id)" id="the time is now">
+                                <img src="https://i.scdn.co/image/ab67616d0000b273d04363a5a0a8d0d072774d13"
+                                    class="card-img ">
+                                <div class="card-title">The Time is Now</div>
+
+                            </button>
+                            <button class="card-1 hide-it myDIV "   onclick="addMusic(this.id)" id="prepare to fight">
+                                <img src="https://i.scdn.co/image/ab67616d0000b2736a467502310521e04116d866"
+                                    class="card-img ">
+                                <div class="card-title">Prepare to Fight</div>
+
+                            </button>
+
+                        </div>
+
+
+                    </div>
+                    <br>
+                    <div class="card-slot-2">
+                        <div class="card-slot-heading">
+                            <div class="main-card-slot-heading">Your Faves (UnderDevelopment)</div>
+                            <div class="secondary-card-slot-heading">Show All</div>
+                        </div>
+                        <div class="card">
+
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+
+                <div class="socials">
+                    <div class="social-item">
+                        <div class="social-item-big">Company</div>
+                        <div class="social-item-small">About</div>
+                        <div class="social-item-small">Jobs</div>
+                        <div class="social-item-small">For the Record</div>
+                    </div>
+                    <div class="social-item">
+                        <div class="social-item-big">Communities</div>
+                        <div class="social-item-small">For Artists</div>
+                        <div class="social-item-small">Developers</div>
+                        <div class="social-item-small">Advertising</div>
+                        <div class="social-item-small">Investors</div>
+                        <div class="social-item-small">Vendors</div>
+                        <div class="social-item-small">Spotify for Work</div>
+                    </div>
+                    <div class="social-item">
+                        <div class="social-item-big">Useful links</div>
+                        <div class="social-item-small">Support</div>
+                        <div class="social-item-small">Free Mobile App</div>
+                    </div>
+                    <div class="social-item"></div>
+                    <div class="social-not-item">
+                        <button class="socials-btn"><i class="fa-brands fa-twitter"></i></button>
+                        <button class="socials-btn"><i class="fa-brands fa-facebook"></i></button>
+                        <button class="socials-btn"><i class="fa-brands fa-instagram"></i></button>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="footer">
+        <div class="music-container" id="music-container">
+            <div class="music-block">
+                <div class="img-container">
+                    <img src="https://github.com/bradtraversy/vanillawebprojects/blob/master/music-player/images/summer.jpg?raw=true"
+                        alt="music-cover" id="cover" class="card-img-sm" />
+                </div>
+                <div class="music-info">
+                    <h2 id="title" class="title"></h2>
+
+                </div>
+                <audio
+                    src="https://github.com/bradtraversy/vanillawebprojects/blob/master/music-player/music/summer.mp3?raw=true"
+                    id="audio"></audio>
+            </div>
+
+
+
+
+            <div class="navigation">
+                <div class="buttons-controls">
+                    <button id="" class="action-btn" onclick="underDevelopment()">
+                        <i class="fas fa-shuffle"></i>
+                    </button>
+                    <button id="prev" class="action-btn">
+                        <i class="fas fa-backward"></i>
+                    </button>
+                    <button id="play" class="action-btn action-btn-big">
+                        <i class="fas fa-play"></i>
+                    </button>
+                    <button id="next" class="action-btn">
+                        <i class="fas fa-forward"></i>
+                    </button>
+                    <button id="" class="action-btn" onclick="underDevelopment()">
+                        <i class="fas fa-repeat"></i>
+                    </button>
+                </div>
+                <div class="progress-container" id="progress-container">
+                    <div class="progress" id="progress"></div>
+                </div>
+
+            </div>
+            <div class="temporary">
+                <button></button>
+                <button><i class="fa-solid fa-microphone"></i></button>
+                <button></button>
+                <button></button>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+     <script src="index.js"></script>
+</body>
+
+</html>
